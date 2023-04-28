@@ -1,0 +1,67 @@
+.secondPage {
+    background-image: url(../../images/background5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+    .row {
+        max-width: 1320px;
+        margin: 0 auto;
+
+        h2 {
+            font-size: 1.8rem;
+            padding-bottom: 3rem;
+            width:60%;
+
+            @include respond-custom(mobile){
+         
+                text-align: center;
+                margin: 0 auto;
+                font-size: 1.5rem;
+             }
+        }
+
+        .cards-post {
+            display: flex;
+            flex-wrap: wrap;
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 100%);
+            backdrop-filter: blur(3.5px);
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+            border-radius: 30px;
+            padding: 3rem 3rem;
+        }
+
+        .card {
+            max-width: 350px;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-bottom: 16px;
+            margin: 0 auto;
+            @include respond-custom(mobile){
+                text-align: center;
+             }
+        
+            .icon svg {
+                width: 56px;
+                height: 56px;
+                margin-bottom: 1rem;
+                color: $font2;
+            }
+
+            h5 {
+                font-size: 1.3rem;
+                margin-bottom: .5rem;
+            
+            }
+
+            p {
+                font-size: 1rem;
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.fourthPage {
+    background-image: url(../../images/background5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+    .row {
+        max-width: 1320px;
+        margin: 0 auto;
+        text-align: center;
+        @include respond-custom(mobile){
+            padding-left: 6rem;
+            padding-right: 6rem;
+         }
+
+        h4 {
+            text-transform: uppercase;
+            font-size: 1.3rem;
+        }
+
+        h2 {
+            margin-bottom: 3rem !important;
+            width: 70%;
+            margin: 0 auto;
+            font-size: 1.8rem;
+        }
+
+        .content {
+        display: flex;
+        flex-wrap: wrap;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 100%);
+        backdrop-filter: blur(3.5px);
+        border-radius: 30px;
+        padding: 3rem 3rem;
+
+        .card {
+            text-align: center;
+            font-size: 1.8rem;
+            width: 350px;
+            margin-bottom: 3rem !important;
+            margin: 0 auto;
+
+                h5 {
+                    font-size: 2.8rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

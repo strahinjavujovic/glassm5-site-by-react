@@ -1,0 +1,131 @@
+.eleventhPage {
+    background-image: url(../../images/mbr.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8rem 3rem;
+    position: relative;
+
+    .overlay {
+        background-color: #ffffff;
+        opacity: 0.2;   
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 0;
+        pointer-events: none;
+    }
+    .row {
+        max-width: 1340px;
+        margin: 0 auto;
+        display: flex;
+        @include respond-custom(mobile){
+           display: block;
+           text-align: center;
+         }
+        .contact {
+            position: relative;
+            width: 41%;
+            color: $font2;
+            font-weight: 400;
+            z-index: 1;
+            @include respond-custom(mobile){
+                width: 80%;
+                margin: 0 auto;
+                margin-bottom: 20px;
+             }
+
+            h4 {
+                font-size: 1rem;
+                text-transform: uppercase;
+                margin-bottom: .5rem;
+                padding-bottom: .5rem;
+            }
+
+            h2 {
+                font-size: 2.8rem;
+                font-weight: bold;
+            }
+
+            .adress {
+                margin: 20px 0;
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+        }
+
+        .form {
+            width: 58%;
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 100%);
+            backdrop-filter: blur(3.5px);
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+            border-radius: 30px;
+            padding: 3rem 2rem;
+            @include respond-custom(mobile){
+                width: 80%;
+                margin: 0 auto;
+                margin-bottom: 20px;
+             }
+
+            .inputs {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 1rem;
+                
+                .input {
+                    width: 46% ;
+                    min-height: 40px;
+                    margin: 10px 10px ;
+                    @include respond-custom(mobile){
+                        width: 100%;
+                       
+                     }
+                   
+                    input {
+                        padding: 12px 12px;
+                        border-radius: 5px;
+                        width: 90%;
+                        font-size: 1rem;
+                    }
+                }
+
+                .input-message {
+                    width: 100%;
+                    margin: 10px 10px ;
+
+                    textarea {
+                        font-family: $family1;
+                        padding: 16px 16px;
+                        resize: none;
+                        width: 93%;
+                        min-height: 250px;
+                        border-radius: 5px;
+                        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px 0px, rgba(0, 0, 0, 0.07) 0px 1px 3px 0px, rgba(0, 0, 0, 0.03) 0px 0px 0px 1px;
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .button {
+                    margin: 20px 10px;
+                    width: 100%;
+
+                    li {
+                        list-style: none;
+                        a {
+                            @include buttonStyle;
+                            text-decoration: none;
+                            padding: 1rem 3rem ;
+                        }
+                    }
+
+                    li:hover {
+                            transform: translateY(-3px) !important;
+                            cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

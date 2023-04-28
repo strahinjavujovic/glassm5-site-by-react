@@ -1,0 +1,93 @@
+.sixthPage {
+    background-image: url(../../images/background5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+    .row { 
+        max-width: 1320px;
+        margin: 0 auto;
+        text-align: center;
+
+        h2 {
+            margin-bottom: 3rem !important;
+            width: 70%;
+            margin: 0 auto;
+            font-size: 1.8rem;
+        }
+
+        h4 {
+            text-transform: uppercase;
+        }
+
+        .content {
+            width: 100%;
+            display: flex;
+            color: #fff;
+            text-align: center;
+            margin: 0 auto !important;
+            justify-content: space-between;
+
+            @include respond-custom(mobile){
+                display: block;
+             }
+
+            .card {
+                margin: 0 auto;
+                width: 400px;
+                height: 400px;
+                background-image: url(../../images/team/team2.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                border-radius: 30px;
+                margin-bottom: 1rem;
+                
+                .info {
+                    
+                    height: 100px;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    transition: all 0.3s;
+                    font-size: 1.3rem;
+
+                        h6 {
+                            font-weight: 400;
+                        }
+                        
+                        h5 {
+                            font-weight: bold;
+                            font-size: 1.5rem;
+                            margin-bottom: 10px;
+                        }
+                
+                        .icons {
+                            opacity: 0;
+
+                            svg {
+                                margin-right: 1rem;
+                                height: 27px;
+                                width: 27px;
+                            }
+                        }
+                }
+            }
+            .card:hover {
+                cursor: pointer;
+            }
+
+            .card:hover .icons {
+                opacity: 1 !important;
+                
+            }   
+
+            .card:hover .info {
+                transform: translateY(-30px) !important;
+            }    
+        }
+    }
+}

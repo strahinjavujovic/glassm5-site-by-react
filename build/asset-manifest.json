@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/glassm5-pages-review/static/css/main.7b447f65.css",
+    "main.js": "/glassm5-pages-review/static/js/main.da80ee18.js",
+    "static/js/787.2f568d7d.chunk.js": "/glassm5-pages-review/static/js/787.2f568d7d.chunk.js",
+    "static/media/GlassM5.mp4": "/glassm5-pages-review/static/media/GlassM5.9914e8e7d89829fb0359.mp4",
+    "static/media/3pagea.jpg": "/glassm5-pages-review/static/media/3pagea.62985ebc13bb919a6e34.jpg",
+    "static/media/mbr.jpg": "/glassm5-pages-review/static/media/mbr.b42c0b913b231f95bee4.jpg",
+    "static/media/mbr-2.jpg": "/glassm5-pages-review/static/media/mbr-2.5f9f6d61f72e136576bc.jpg",
+    "static/media/3page.jpeg": "/glassm5-pages-review/static/media/3page.bfb97dba1112ba42452f.jpeg",
+    "static/media/video.jpg": "/glassm5-pages-review/static/media/video.e1c47e4df903ef17fd66.jpg",
+    "static/media/team2.jpg": "/glassm5-pages-review/static/media/team2.8a6ce7b1e1eabc07f4aa.jpg",
+    "static/media/team1.jpg": "/glassm5-pages-review/static/media/team1.fba63660ab583b9514da.jpg",
+    "static/media/team3.jpg": "/glassm5-pages-review/static/media/team3.a4cb7f81ed1d7d0c0e9e.jpg",
+    "static/media/background5.jpg": "/glassm5-pages-review/static/media/background5.f843133ad1b131abb184.jpg",
+    "static/media/2.png": "/glassm5-pages-review/static/media/2.594733ee9f25616696fe.png",
+    "index.html": "/glassm5-pages-review/index.html",
+    "main.7b447f65.css.map": "/glassm5-pages-review/static/css/main.7b447f65.css.map",
+    "main.da80ee18.js.map": "/glassm5-pages-review/static/js/main.da80ee18.js.map",
+    "787.2f568d7d.chunk.js.map": "/glassm5-pages-review/static/js/787.2f568d7d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b447f65.css",
+    "static/js/main.da80ee18.js"
+  ]
+}

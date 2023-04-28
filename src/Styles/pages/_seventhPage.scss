@@ -1,0 +1,142 @@
+@keyframes icons {
+    from{
+        width: 100px;
+        height: 100px;
+        opacity: 0.8;
+    }
+    to{
+        width: 160px;
+        height: 160px;
+        opacity: 0;
+    }
+}
+
+.seventhPage {
+    background-image: url(../../images/video.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fff;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    
+    .row {
+        max-width: 1320px;
+        margin: 0 auto;
+        
+        .button-play {
+            z-index: 2;
+            position: absolute;
+            top: 35%;
+            left: 46%;//42
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            @include respond-custom(mobile){
+                left: 42%;
+             }
+
+            h2 {
+                position: absolute;
+                top: 130%;
+                width: 300px;
+                color: #fff;
+                font-size: 2.8rem;
+                left: -82px;
+            }
+        
+            .animation {
+                z-index: 1;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background-color: #fff;
+                transform: translate(-50%, -50%);
+                opacity: 0.8;
+                animation-iteration-count: infinite;
+                animation-duration: 1s;
+                animation-name: icons;
+                }   
+        }
+        
+        svg {
+            z-index: 3;
+            position: absolute;           
+            height: 35px;
+        }
+    }
+    
+    .video {
+        display: none;   
+    }
+    
+    .play {
+        position: absolute;
+        z-index: 1001;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(3.5px);
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+        margin: 0 auto !important;
+
+        .content {
+            max-width: 1320px;
+            height: 100%;
+            margin: 0 auto;
+
+            iframe {
+                width: 100%;
+            }
+        } 
+    }
+
+    .close-button {
+        display: none;
+        
+        svg {
+            width: 30px;
+            height: 30px;
+            color: #fff;
+        }
+        
+    }
+
+    .visible {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1002;
+        position: absolute;
+        top:30px;
+        right: 30px;
+        padding: 10px 10px;
+        background-color: black;
+        border-radius: 50%; 
+        cursor: pointer;
+    }
+    
+    .overlay {
+        opacity: 0.6;
+        background-color: rgb(38, 61, 90);
+        bottom: 0;
+        left: 0;
+        opacity: 0.5;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 0;
+        pointer-events: none;
+    }
+}

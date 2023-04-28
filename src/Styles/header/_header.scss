@@ -1,0 +1,115 @@
+
+
+.header{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height:50px;  
+    font-family: $family1;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.7);
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 600;
+    transition: height 0.2s linear;
+    padding: 10px 10px;
+    overflow: hidden;
+    align-items: center;   
+
+ @include respond-custom(mobile){
+    display: block;   
+    padding: 5px 5px;
+    
+ }
+ 
+}
+////////////////////////////////////////////////////////////
+.companyName{
+   margin-left: 50px;
+   font-size: 1.8rem;
+   width: 20%;
+}
+////////////////////////////////////////////////////////////
+.header ul{
+display: flex;
+padding: 5px 5px;
+
+@include respond-custom(mobile){
+    display: block;
+}
+}
+.header ul li{
+text-decoration: none;
+list-style: none;
+
+@include respond-custom(mobile){
+    margin-bottom: 5px;
+    text-align: center;
+}
+}
+.header a {
+    
+    color: $font1 ;
+    margin-right: 30px;
+    text-decoration: none;
+ 
+    
+}
+.header a:hover {
+    color:black;
+    cursor: pointer;
+}
+
+
+////////////////////////////////////////////////////////////
+
+.header .button{
+    @include respond-custom(mobile){
+        display:none;
+        text-align: center;
+        margin: 0;
+    }
+    margin-right: 50px;
+   
+    
+}
+.header .button a{
+    @include buttonStyle;
+    
+}
+
+
+.header .button:hover{
+   transform: translateY(-3px);
+   cursor: pointer;
+}
+////////////////////////////////////////////////////////////
+
+.navbar-toggler{
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    margin-right: 50px;
+    width: 24px;
+    height: 24px;
+    color: $font1;
+
+    @include respond-grater-than(mobile){
+        display:none;
+    }
+}
+.navbar-toggler:hover{
+    color:black;
+    cursor: pointer;
+}
+
+.expanded{
+    height: 240px !important;
+   
+}
+
+.expanded1{
+    display: block !important;
+}

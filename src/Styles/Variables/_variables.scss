@@ -1,0 +1,47 @@
+// colors
+$font1: #56667b ;
+$font2:#263d5a;
+$btnColor: #56667b;
+//font family
+
+$family1:  'Lexend', sans-serif;
+
+//buttons
+@mixin buttonStyle{
+    border: none;
+    border-radius: 100px;
+    background-color: $btnColor ;
+    padding: 1rem 2.6rem ;
+    font-weight: 600;
+    padding: 10px 15px;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5;
+    background: linear-gradient(90deg, #56667b 0%, #919ace 100%);
+}
+
+
+
+
+//responsive website
+
+@mixin respond-custom($screenType){
+    @if $screenType == mobile{
+        @media only screen and (min-width:0px) and (max-width:991px){
+            @content;
+        }
+    }
+    @else if $screenType == desktop{
+        @media only screen and (min-width:480px) and (max-width:1200px){
+            @content;
+        }
+    }
+    
+}
+@mixin respond-grater-than($screenType){
+    @if $screenType == mobile{
+        @media only screen and (min-width:991px){
+            @content;
+        }
+    }
+}
